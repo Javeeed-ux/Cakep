@@ -14,7 +14,7 @@ if 'nama' in st.session_state:
         st.session_state.data = pd.DataFrame(columns=['Date', 'Category', 'Amount', 'Type'])
 
     
-    image = Image.open('C:/Users/asus/Documents/Tubes Alpro/logocakep.jpg')
+    image = Image.open('logocakep.jpg')
     st.image(image, width=140)
     st.title('C a k e p .')
     st.write('Selamat datang di Cakep, Kendalikan pengeluaran dengan mencatat keuangan hanya dengan Cakep.')
@@ -101,7 +101,7 @@ if 'nama' in st.session_state:
     st.write(f'Income Tax: {pph}')
 
     if st.button('Simpan ke Excel'):
-        st.session_state.data.to_excel("C:/Users/asus/Documents/Tubes Alpro/DATACAKEP.xlsx", index=False)
+        st.session_state.data.to_excel("datacakep.xlsx", index=False)
         st.write('Data Berhasil Disimpan ke Excel!')
 
     st.subheader('Visualisasi Data')
