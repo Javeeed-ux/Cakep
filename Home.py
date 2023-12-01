@@ -17,7 +17,7 @@ if 'nama' in st.session_state:
     image = Image.open('logocakep.jpg')
     st.image(image, width=140)
     st.title('C a k e p .')
-    st.write('Selamat datang di Cakep, Kendalikan pengeluaran dengan mencatat keuangan hanya dengan Cakep.')
+    st.write('Selamat datang di Cakep, Kendalikan pengeluaran dengan mencatat keuangan hanya dengan Cakep')
 
     
     date = st.date_input('Date')
